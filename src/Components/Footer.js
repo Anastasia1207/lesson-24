@@ -6,7 +6,7 @@ function Footer() {
 
            
         
-            <p><small>&nbsp;&nbsp; &copy;some footer information</small></p>
+            <p><small>&nbsp; TM   &#169; 2021 ART Inc. All rights reserved.</small></p>
     
         </div>
         </div>
