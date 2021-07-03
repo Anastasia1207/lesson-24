@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Article from './Components/Article';
 import Categories3 from './Components/Categories3';
+import Category1 from './Components/Category1';
 
 function App() {
     return (
@@ -17,7 +18,10 @@ function App() {
                     <Route path="/categories">
                     </Route>
                     <Route path="/Categories3">
-                      <Categories3 />
+                        <Categories3 />
+                    </Route>
+                    <Route path="/category1">
+                        <Category1 />
                     </Route>
                     <Route path="/card">
                     </Route>
