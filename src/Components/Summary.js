@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-function Card() {
+
+function Summary() {
 
     return (
         <div className="container">
@@ -8,16 +9,16 @@ function Card() {
 
            
         
-            <h2>Card</h2>
-            <ul className="nav nav-tabs">
+          <h1>Summary</h1>
+          <ul className="nav nav-tabs">
   <li className="nav-item">
-    <NavLink className="nav-link active" aria-current="page" to="/card">Products</NavLink>
+    <NavLink className="nav-link" aria-current="page" to="/card">Products</NavLink>
   </li>
   <li className="nav-item">
     <NavLink className="nav-link" to="/adress">Adress</NavLink>
   </li>
   <li className="nav-item">
-    <NavLink className="nav-link" to="/summary">Summary</NavLink>
+    <NavLink className="nav-link active" to="/summary">Summary</NavLink>
   </li>
   {/* <li class="nav-item">
     <NavLink className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</NavLink>
@@ -31,4 +32,4 @@ function Card() {
     )
 }
 
-export default Card;
+export default Summary;

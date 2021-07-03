@@ -20,14 +20,14 @@ function Header() {
           <NavLink className="nav-link active" aria-current="page" exact to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/categories">Categories</NavLink>
+          <NavLink className="nav-link" to="/category1">Categories</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/card">Card</NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink className="nav-link" to="/Categories3">Categories3</NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>

@@ -2,10 +2,10 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
-import Paints from '../Assets/Img/Paints.jpg';
+import PaintsResiz from '../Assets/Img/PaintsResiz.jpg';
 import Brushes from '../Assets/Img/Brushes.jpg';
 import Paper from '../Assets/Img/Paper.jpg';
-
+import Paint from '../Assets/Img/Paint.jpg';
 function Categories3() {
 
     return (
@@ -51,8 +51,8 @@ function Categories3() {
                 <br></br>
                 <div className="row">
                 <div className="col-md-5">
-                    <div className="card card-fluid" style={{ height: '10%', width: 'auto' }}>
-                        <img src={Paints} className="card-img-top" alt="Pattern two" />
+                    <div className="card card-fluid" style={{ width: 'auto' }}>
+                        <img src={Paint} className="card-img-top" alt="Pattern two" />
                         </div>
                         </div>
                         <div className="col-md-7">
@@ -74,7 +74,7 @@ function Categories3() {
                         <div className="col-md-7">
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Watercolor paper</NavLink>
+                                <NavLink to="/">Watercolor Paper</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>

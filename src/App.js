@@ -3,6 +3,8 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Card from './Components/Card';
+import Adress from './Components/Adress';
+import Summary from './Components/Summary';
 import Category1 from './Components/Category1';
 import Product1 from './Components/Product1';
 import Categories3 from './Components/Categories3';
@@ -34,7 +36,12 @@ function App() {
                     <Route path="/card">
                       <Card />
                     </Route>
-                   
+                    <Route path="/adress">
+                        <Adress />
+                    </Route>
+                    <Route path="/summary">
+                        <Summary />
+                    </Route>
                 </Switch>
                 <Footer />
             </Router>

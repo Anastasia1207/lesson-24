@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-function Card() {
+
+function Adress() {
 
     return (
         <div className="container">
@@ -8,13 +9,13 @@ function Card() {
 
            
         
-            <h2>Card</h2>
-            <ul className="nav nav-tabs">
+          <h1>Adress</h1>
+          <ul className="nav nav-tabs">
   <li className="nav-item">
-    <NavLink className="nav-link active" aria-current="page" to="/card">Products</NavLink>
+    <NavLink className="nav-link" aria-current="page" to="/card">Products</NavLink>
   </li>
   <li className="nav-item">
-    <NavLink className="nav-link" to="/adress">Adress</NavLink>
+    <NavLink className="nav-link active" to="/adress">Adress</NavLink>
   </li>
   <li className="nav-item">
     <NavLink className="nav-link" to="/summary">Summary</NavLink>
@@ -31,4 +32,4 @@ function Card() {
     )
 }
 
-export default Card;
+export default Adress;
