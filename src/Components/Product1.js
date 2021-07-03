@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Brushes1 from '../Assets/Img/Brushes1.jpg';
+
 import fox1 from '../Assets/Img/Fox1.jpg';
 import fox2 from '../Assets/Img/Fox2.jpg';
 import fox3 from '../Assets/Img/Fox3.jpg';
@@ -6,8 +8,8 @@ import fox4 from '../Assets/Img/Fox4.jpg';
 import fox5 from '../Assets/Img/Fox5.jpg';
 import fox6 from '../Assets/Img/Fox6.jpg';
 
-function Article() {
-    const [mainImg, setMainImg] = useState(fox1)
+function Product1() {
+    const [mainImg, setMainImg] = useState(Brushes1)
 
     const changeMainImg = (e) => {
         setMainImg(e.target.src);
@@ -28,7 +30,7 @@ function Article() {
                         </div>
                         <div className="row mb-2">
                             <div className="col px-1">
-                                <img src={fox1} alt={'fox1'} className="img-fluid" onClick={changeMainImg} />
+                                <img src={Brushes1} alt={'fox1'} className="img-fluid" onClick={changeMainImg} />
                             </div>
                             <div className="col px-1">
                                 <img src={fox2} alt={'fox2'} className="img-fluid" onClick={changeMainImg} />
@@ -67,4 +69,4 @@ function Article() {
     )
 }
 
-export default Article;
+export default Product1;

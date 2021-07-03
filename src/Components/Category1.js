@@ -27,7 +27,7 @@ function Category1() {
                         <img src={Brushes1} className="card-img-top" alt="Pattern one" />
                         <div className="card-body">
                             <h6 className="card-title">
-                                <NavLink to="/category1">Product 1</NavLink>
+                                <NavLink to="/product1">Product 1</NavLink>
                             </h6>
                             <p className="card-text">3.50 EUR</p>
                         </div>
