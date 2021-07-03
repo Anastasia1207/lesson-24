@@ -1,12 +1,11 @@
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-
-import pattern1 from '../Assets/Img/pattern1.jpg';
-import pattern2 from '../Assets/Img/pattern2.jpg';
-import pattern3 from '../Assets/Img/pattern3.jpg';
+import Paints from '../Assets/Img/Paints.jpg';
 import Brushes from '../Assets/Img/Brushes.jpg';
+import Paper from '../Assets/Img/Paper.jpg';
+
 function Categories3() {
 
     return (
@@ -52,14 +51,14 @@ function Categories3() {
                 <br></br>
                 <div className="row">
                 <div className="col-md-5">
-                    <div className="card card-fluid" style={{ width: 'auto' }}>
-                        <img src={pattern2} className="card-img-top" alt="Pattern two" />
+                    <div className="card card-fluid" style={{ height: '10%', width: 'auto' }}>
+                        <img src={Paints} className="card-img-top" alt="Pattern two" />
                         </div>
                         </div>
                         <div className="col-md-7">
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Category 2</NavLink>
+                                <NavLink to="/">Paints</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -69,13 +68,13 @@ function Categories3() {
                     <div className="row">
                 <div className="col-md-5">
                     <div className="card" style={{ width: 'auto' }}>
-                        <img src={pattern3} className="card-img-top" alt="Pattern three" />
+                        <img src={Paper} className="card-img-top" alt="Pattern three" />
                         </div>
                         </div>
                         <div className="col-md-7">
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Category 3</NavLink>
+                                <NavLink to="/">Watercolor paper</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
