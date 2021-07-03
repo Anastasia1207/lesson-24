@@ -13,7 +13,7 @@ function Home() {
                     <Carousel>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 src={pattern1}
                                 alt="First slide"
                                 height="300"
@@ -26,7 +26,7 @@ function Home() {
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 src={pattern2}
                                 alt="Third slide"
                                 height="300"
@@ -39,7 +39,7 @@ function Home() {
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 img-fluid"
                                 src={pattern3}
                                 alt="Third slide"
                                 height="300"
