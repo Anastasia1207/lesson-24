@@ -6,15 +6,15 @@ function Header() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light border-left">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/">Navbar</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-      <div className="navbar-nav">
-        <li className="nav-item">
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item ">
           <NavLink className="nav-link active" aria-current="page" to="/homepage">Home</NavLink>
         </li>
         <li className="nav-item">
@@ -26,7 +26,7 @@ function Header() {
         {/* <li className="nav-item">
           <a className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> */}
-      </div>
+      </ul>
     </div>
   </div>
 </nav>

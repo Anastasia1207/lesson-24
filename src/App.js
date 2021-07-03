@@ -15,7 +15,7 @@ function App() {
                     <Route path="/">
                     </Route>
                     <Route path="/categories">
-                    </Route>
+                    </Route>;
                     <Route path="/card">
                     </Route>
         </Switch>

@@ -1,8 +1,14 @@
 function Footer() {
 
     return (
-        <div>
-            <h2>Here will be Footer</h2>
+        <div ClassName="container">
+            <div className="row">
+
+           
+        
+            <p><small>&nbsp;&nbsp; &copy;some footer information</small></p>
+    
+        </div>
         </div>
     )
 }
