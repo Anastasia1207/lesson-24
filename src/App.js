@@ -11,15 +11,13 @@ function App() {
           <Route exact path="/homepage">
 
           </Route>
-          <Route path="/">
+          <Route path="/categories">
             
             </Route>
-            <Route path="/">
+            <Route path="/card">
             
             </Route>
-            <Route path="/">
-            
-            </Route>
+         
         </Switch>
         <Footer />
       </Router>
