@@ -13,18 +13,15 @@ function App() {
                         <Home />
                     </Route>
                     <Route path="/">
-
-         </Route>
-          <Route path="/categories">
-            
-            </Route>
-            <Route path="/card">
-            
-            </Route>
-         
+                    </Route>
+                    <Route path="/categories">
+                    </Route>
+                    <Route path="/card">
+                    </Route>
         </Switch>
         <Footer />
       </Router>
     </div>
-  );
+  )
+    }
 export default App;
