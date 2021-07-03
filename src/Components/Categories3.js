@@ -1,8 +1,7 @@
-import { NavLink } from 'react-router-dom';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
-
 import React from "react";
-import ReactDOM from "react-dom";
+import { Link, NavLink } from 'react-router-dom';
+
 
 function Categories3() {
 
@@ -11,7 +10,7 @@ function Categories3() {
 <div className="container">
 <div className="row">
      
-         
+     
       
           <Breadcrumb >
   <Breadcrumb.Item to="/">Home</Breadcrumb.Item>
