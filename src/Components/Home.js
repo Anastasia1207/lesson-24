@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
 
 import pattern1 from '../Assets/Img/pattern1.jpg';
 import pattern2 from '../Assets/Img/pattern2.jpg';

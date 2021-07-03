@@ -10,7 +10,7 @@ function Header() {
         <div className="container">
             <nav className="navbar navbar-expand-lg  navbar navbar-dark bg-dark border-right">
   <div className="container-fluid">
-    <NavLink className="navbar-brand " to="/">Navbar</NavLink>
+    <NavLink className="navbar-brand " to="/">ART</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -25,9 +25,7 @@ function Header() {
         <li className="nav-item">
           <NavLink className="nav-link" to="/card">Card</NavLink>
         </li>
-        {/* <li className="nav-item">
-          <a className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> */}
+  
       </ul>
     </div>
   </div>
