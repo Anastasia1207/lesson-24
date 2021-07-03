@@ -12,8 +12,7 @@ function App() {
                     <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/">
-                    </Route>
+                  
                     <Route path="/categories">
                     </Route>;
                     <Route path="/card">
