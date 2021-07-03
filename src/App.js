@@ -17,6 +17,8 @@ function App() {
                     </Route>;
                     <Route path="/card">
                     </Route>
+                        <Article />
+                    </Route>
                 </Switch>
                 <Footer />
             </Router>

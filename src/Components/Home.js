@@ -1,8 +1,9 @@
+import Carousel from 'react-bootstrap/Carousel';
+import { NavLink } from 'react-router-dom';
+
 import pattern1 from '../Assets/Img/pattern1.jpg';
 import pattern2 from '../Assets/Img/pattern2.jpg';
 import pattern3 from '../Assets/Img/pattern3.jpg';
-
-import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
 
@@ -15,7 +16,7 @@ function Home() {
                             <img
                                 className="d-block w-100 img-fluid"
                                 src={pattern1}
-                                alt="First slide"
+                                alt="Pattern one"
                                 height="300"
                             />
 
@@ -28,7 +29,7 @@ function Home() {
                             <img
                                 className="d-block w-100 img-fluid"
                                 src={pattern2}
-                                alt="Third slide"
+                                alt="Pattern two"
                                 height="300"
                             />
 
@@ -41,7 +42,7 @@ function Home() {
                             <img
                                 className="d-block w-100 img-fluid"
                                 src={pattern3}
-                                alt="Third slide"
+                                alt="Pattern three"
                                 height="300"
                             />
 
@@ -56,6 +57,41 @@ function Home() {
             <div className="row">
                 <div className="col mt-3">
                     <h4>Categories</h4>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col my-3">
+                    <div className="card" style={{ width: 'auto' }}>
+                        <img src={pattern1} className="card-img-top" alt="Pattern one" />
+                        <div className="card-body">
+                            <h5 className="card-title">
+                                <NavLink to="/">Category 1</NavLink>
+                            </h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col my-3">
+                    <div className="card card-fluid" style={{ width: 'auto' }}>
+                        <img src={pattern2} className="card-img-top" alt="Pattern two" />
+                        <div className="card-body">
+                            <h5 className="card-title">
+                                <NavLink to="/">Category 2</NavLink>
+                            </h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col my-3">
+                    <div className="card" style={{ width: 'auto' }}>
+                        <img src={pattern3} className="card-img-top" alt="Pattern three" />
+                        <div className="card-body">
+                            <h5 className="card-title">
+                                <NavLink to="/">Category 3</NavLink>
+                            </h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
