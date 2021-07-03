@@ -19,7 +19,7 @@ function Product1() {
         <div className="container mb-5">
             <div className="row">
                 <div className="col-3 mt-3">
-                    <h4>Article</h4>
+                    <h4>Product 1</h4>
                 </div>
                 <div className="row">
                     <div className="col">
