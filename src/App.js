@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import Home from './Components/Home';
 
 function App() {
-  return (
-    <div>
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/homepage">
+    return (
+        <div>
+            <Router>
+                <Header />
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/">
 
-          </Route>
+         </Route>
           <Route path="/categories">
             
             </Route>
@@ -23,6 +27,4 @@ function App() {
       </Router>
     </div>
   );
-}
-
 export default App;
