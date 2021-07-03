@@ -18,7 +18,7 @@ function Product1() {
     return (
         <div className="container mb-5">
             <div className="row">
-                <div className="col-3 mt-3">
+                <div className="col-4 mt-3">
                     <h4>Product 1</h4>
                 </div>
                 <div className="row">
@@ -57,7 +57,7 @@ function Product1() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-9">
+                    <div className="col-8">
                         <p>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</p>
                         <p>Twelve species belong to the monophyletic "true foxes" group of genus Vulpes. Approximately another 25 current or extinct species are always or sometimes called foxes; these foxes are either part of the paraphyletic group of the South American foxes, or of the outlying group, which consists of the bat-eared fox, gray fox, and island fox.</p>
                         <p>Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies.[2] The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world. The hunting of foxes with packs of hounds, long an established pursuit in Europe, especially in the British Isles, was exported by European settlers to various parts of the New World.</p>

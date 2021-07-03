@@ -69,9 +69,9 @@ function Home() {
                     <div className="card" style={{ width: 'auto' }}>
                         <img src={Brushes} className="card-img-top" alt="Pattern one" />
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h6 className="card-title">
                                 <NavLink to="/category1">Brushes and Painting Tools</NavLink>
-                            </h5>
+                            </h6>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -80,9 +80,9 @@ function Home() {
                     <div className="card card-fluid" style={{ width: 'auto' }}>
                         <img src={Pencils} className="card-img-top" alt="Pattern two" />
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h6 className="card-title">
                                 <NavLink to="/">Illustration and Drawing Supplies</NavLink>
-                            </h5>
+                            </h6>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -91,9 +91,9 @@ function Home() {
                     <div className="card" style={{ width: 'auto' }}>
                         <img src={Paint} className="card-img-top" alt="Pattern three" />
                         <div className="card-body">
-                            <h5 className="card-title">
-                                <NavLink to="/Categories3">Paint and Medums</NavLink>
-                            </h5>
+                            <h6 className="card-title">
+                                <NavLink to="/Categories3">Paint and Mediums</NavLink>
+                            </h6>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
