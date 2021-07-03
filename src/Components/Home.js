@@ -8,48 +8,56 @@ function Home() {
 
     return (
         <div className="container">
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={pattern1}
-                        alt="First slide"
-                        height="300"
-                    />
+            <div className="row">
+                <div className="col mt-3">
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={pattern1}
+                                alt="First slide"
+                                height="300"
+                            />
 
-                    <Carousel.Caption>
-                        {/* <h3>PreReact.com slide label</h3>
+                            <Carousel.Caption>
+                                {/* <h3>PreReact.com slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={pattern2}
-                        alt="Third slide"
-                        height="300"
-                    />
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={pattern2}
+                                alt="Third slide"
+                                height="300"
+                            />
 
-                    <Carousel.Caption>
-                        {/* <h3>PreReact.com slide label</h3>
+                            <Carousel.Caption>
+                                {/* <h3>PreReact.com slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={pattern3}
-                        alt="Third slide"
-                        height="300"
-                    />
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={pattern3}
+                                alt="Third slide"
+                                height="300"
+                            />
 
-                    <Carousel.Caption>
-                        {/* <h3>PreReact.com slide label</h3>
+                            <Carousel.Caption>
+                                {/* <h3>PreReact.com slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col mt-3">
+                    <h4>Categories</h4>
+                </div>
+            </div>
         </div>
     )
 }
