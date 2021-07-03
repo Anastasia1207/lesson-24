@@ -5,6 +5,7 @@ import React from 'react';
 import pattern1 from '../Assets/Img/pattern1.jpg';
 import pattern2 from '../Assets/Img/pattern2.jpg';
 import pattern3 from '../Assets/Img/pattern3.jpg';
+import Brushes from '../Assets/Img/Brushes.jpg';
 
 function Home() {
 
@@ -63,10 +64,10 @@ function Home() {
             <div className="row">
                 <div className="col my-3">
                     <div className="card" style={{ width: 'auto' }}>
-                        <img src={pattern1} className="card-img-top" alt="Pattern one" />
+                        <img src={Brushes} className="card-img-top" alt="Pattern one" />
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Category 1</NavLink>
+                                <NavLink to="/category1">Brushes and Painting Tools</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
