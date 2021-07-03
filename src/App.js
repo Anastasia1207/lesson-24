@@ -18,10 +18,10 @@ function App() {
                     </Route>
                     <Route path="/card">
                     </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  )
-    }
+                </Switch>
+                <Footer />
+            </Router>
+        </div>
+    )
+}
 export default App;
