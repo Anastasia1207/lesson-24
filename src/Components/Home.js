@@ -1,11 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 
 import pattern1 from '../Assets/Img/pattern1.jpg';
 import pattern2 from '../Assets/Img/pattern2.jpg';
 import pattern3 from '../Assets/Img/pattern3.jpg';
+
+import Pencils from '../Assets/Img/Pencils.jpg';
 import Brushes from '../Assets/Img/Brushes.jpg';
+import Paint from '../Assets/Img/Paint.jpg';
 
 function Home() {
 
@@ -75,10 +78,10 @@ function Home() {
                 </div>
                 <div className="col my-3">
                     <div className="card card-fluid" style={{ width: 'auto' }}>
-                        <img src={pattern2} className="card-img-top" alt="Pattern two" />
+                        <img src={Pencils} className="card-img-top" alt="Pattern two" />
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Category 2</NavLink>
+                                <NavLink to="/">Illustration and Drawing Supplies</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -86,10 +89,10 @@ function Home() {
                 </div>
                 <div className="col my-3">
                     <div className="card" style={{ width: 'auto' }}>
-                        <img src={pattern3} className="card-img-top" alt="Pattern three" />
+                        <img src={Paint} className="card-img-top" alt="Pattern three" />
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Category 3</NavLink>
+                                <NavLink to="/">Paint and Medums</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
