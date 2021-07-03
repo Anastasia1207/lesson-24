@@ -66,7 +66,7 @@ function Home() {
                         <img src={Brushes} className="card-img-top" alt="Pattern one" />
                         <div className="card-body">
                             <h5 className="card-title">
-                                <NavLink to="/">Brushes and Painting Tools</NavLink>
+                                <NavLink to="/category1">Brushes and Painting Tools</NavLink>
                             </h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
