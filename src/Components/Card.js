@@ -13,7 +13,8 @@ function Card() {
                 <div className="col my-4">
                     <Breadcrumb >
                         <Breadcrumb.Item><NavLink exact to="/">Home</NavLink></Breadcrumb.Item>
-                        <Breadcrumb.Item active>Card</Breadcrumb.Item>
+                        <Breadcrumb.Item><NavLink to="/card">Card</NavLink></Breadcrumb.Item>
+                        <Breadcrumb.Item active>Products</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
             </div>
