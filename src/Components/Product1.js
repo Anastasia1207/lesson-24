@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { NavLink } from 'react-router-dom';
+
 import Brushes1 from '../Assets/Img/Brushes1.jpg';
 
 import fox1 from '../Assets/Img/Fox1.jpg';
@@ -18,7 +21,17 @@ function Product1() {
     return (
         <div className="container mb-5">
             <div className="row">
-                <div className="col-4 mt-3">
+                <div className="col my-4">
+                    <Breadcrumb >
+                        <Breadcrumb.Item><NavLink exact to="/">Home</NavLink></Breadcrumb.Item>
+                        <Breadcrumb.Item><NavLink to="/categories3">Categories</NavLink></Breadcrumb.Item>
+                        <Breadcrumb.Item><NavLink to="/category1">Brushes and Painting Tools</NavLink></Breadcrumb.Item>
+                        <Breadcrumb.Item active>Product 1</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-4">
                     <h4>Product 1</h4>
                 </div>
                 <div className="row">
@@ -51,7 +64,7 @@ function Product1() {
                             </div>
                         </div>
                         <div className="row mt-3">
-                            <div className="col"><p style={{color: 'red', fontWeight: 'bold', fontSize: '20px'}}>9.99 EUR</p></div>
+                            <div className="col"><p style={{ color: 'red', fontWeight: 'bold', fontSize: '20px' }}>9.99 EUR</p></div>
                             <div className="col text-end">
                                 <button className="btn btn-outline-dark">Add to cart</button>
                             </div>
