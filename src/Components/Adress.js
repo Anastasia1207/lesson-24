@@ -9,7 +9,7 @@ function Adress() {
                 <div className="col my-4">
                     <Breadcrumb >
                         <Breadcrumb.Item><NavLink exact to="/">Home</NavLink></Breadcrumb.Item>
-                        <Breadcrumb.Item><NavLink to="/card">Card</NavLink></Breadcrumb.Item>
+                        <Breadcrumb.Item><NavLink to="/cart">Cart</NavLink></Breadcrumb.Item>
                         <Breadcrumb.Item active>Address</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>

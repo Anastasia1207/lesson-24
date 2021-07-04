@@ -3,7 +3,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Home from './Components/Home';
-import Card from './Components/Card';
+import Cart from './Components/Cart';
 import Adress from './Components/Adress';
 import Summary from './Components/Summary';
 import Category1 from './Components/Category1';
@@ -33,8 +33,8 @@ function App() {
                         <Product1 />
 
                     </Route>
-                    <Route path="/card">
-                      <Card />
+                    <Route path="/cart">
+                      <Cart />
                     </Route>
                     <Route path="/adress">
                         <Adress />

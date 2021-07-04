@@ -1,8 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { Navbar } from 'react-bootstrap';
-
-
-
 
 function Header() {
 
@@ -24,7 +20,7 @@ function Header() {
                                 <NavLink className="nav-link" to="/categories3">Categories</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/card">Card</NavLink>
+                                <NavLink className="nav-link" to="/cart">Cart</NavLink>
                             </li>
                             {/* <li className="nav-item">
           <NavLink className="nav-link" to="/Categories3">Categories3</NavLink>
