@@ -9,6 +9,7 @@ import Summary from './Components/Summary';
 import Category1 from './Components/Category1';
 import Product1 from './Components/Product1';
 import Categories3 from './Components/Categories3';
+import Error404 from './Components/Error404';
 
 function App() {
     return (
@@ -28,13 +29,11 @@ function App() {
                     <Route path="/Categories3">
                         <Categories3 />
                     </Route>
-                   
                     <Route path="/product1">
                         <Product1 />
-
                     </Route>
                     <Route path="/cart">
-                      <Cart />
+                        <Cart />
                     </Route>
                     <Route path="/adress">
                         <Adress />
@@ -42,8 +41,12 @@ function App() {
                     <Route path="/summary">
                         <Summary />
                     </Route>
+                    <Route>
+                        <Error404 />
+                    </Route>
                 </Switch>
                 <Footer />
+
             </Router>
         </div>
     )
