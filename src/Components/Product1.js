@@ -2,18 +2,12 @@ import { useState } from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { NavLink } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert'
+import './Style/Lightbox.css';
 
-import Brushes1 from '../Assets/Img/Brushes1.jpg';
 import stars from '../Assets/Img/stars.png';
 
-import fox2 from '../Assets/Img/Fox2.jpg';
-import fox3 from '../Assets/Img/Fox3.jpg';
-import fox4 from '../Assets/Img/Fox4.jpg';
-import fox5 from '../Assets/Img/Fox5.jpg';
-import fox6 from '../Assets/Img/Fox6.jpg';
-
 function Product1() {
-    const [mainImg, setMainImg] = useState(Brushes1);
+    const [mainImg, setMainImg] = useState("https://i.pinimg.com/originals/5a/f0/0b/5af00b162c74fc07ffc96615cb9f728f.jpg");
     const [show, setShow] = useState(false);
 
     const changeMainImg = (e) => {
@@ -22,7 +16,6 @@ function Product1() {
 
     const enableAlert = () => {
         setShow(true)
-
     }
 
     const removeAlert = () => {
@@ -31,6 +24,8 @@ function Product1() {
 
     return (
         <div className="container mb-5">
+
+            {/* ALERT */}
             <div className="row">
                 <div className="col">
                     <div className="d-flex justify-content-center">
@@ -44,9 +39,11 @@ function Product1() {
                             <hr />
                             <div className="row">
                                 <div className="col">
-                                    <img src="https://images.ctfassets.net/f1fikihmjtrp/1pOF3LdH1VITTygjVyI8ds/95c6aa2ca57827a0dac19a88ac1e6f4c/06651-0069-3ww-l.jpg" className="img-fluid" alt="Escoda brushes set" />
+                                    <img src="https://i.pinimg.com/originals/5a/f0/0b/5af00b162c74fc07ffc96615cb9f728f.jpg" className="img-fluid" alt="Escoda brushes set" />
                                 </div>
                                 <div className="col">
+                                    <p></p>
+                                    <br />
                                     <p>Escoda Reserva Kolinsky-Tajmyr Sable Brushes</p>
                                     <p><b>68.00 EUR</b></p>
                                 </div>
@@ -69,6 +66,9 @@ function Product1() {
                     </div>
                 </div>
             </div>
+            {/* ALERT */}
+
+            {/* BREADCRUMB */}
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb >
@@ -79,51 +79,130 @@ function Product1() {
                     </Breadcrumb>
                 </div>
             </div>
+            {/* BREADCRUMB */}
+
+            {/* IMAGES */}
             <div className="row">
                 <div className="col">
                     <div className="row">
                         <div className="col mb-2 px-1">
-                            <img src={mainImg} alt={'main foto'} className="img-fluid" />
+                            <a href="#lightbox-image-1">
+                                <img src={mainImg} alt={'main foto'} className="img-fluid" />
+                            </a>
                         </div>
                     </div>
                     <div className="row mb-2">
                         <div className="col px-1">
-                            <img src={Brushes1} alt={'fox1'} className="img-fluid" onClick={changeMainImg} />
+
+                            <img src="https://i.pinimg.com/originals/5a/f0/0b/5af00b162c74fc07ffc96615cb9f728f.jpg" alt={'fox1'} className="img-fluid" onClick={changeMainImg} />
+
                         </div>
                         <div className="col px-1">
-                            <img src={fox2} alt={'fox2'} className="img-fluid" onClick={changeMainImg} />
+                            <img src="https://media.jacksonsart.com/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/B/R/BRS121410.JPG" alt={'fox2'} className="img-fluid" onClick={changeMainImg} />
                         </div>
                         <div className="col px-1">
-                            <img src={fox3} alt={'fox3'} className="img-fluid" onClick={changeMainImg} />
+                            <img src="https://i5.walmartimages.com/asr/28618caf-a053-4b28-93d5-b776c0e6f498_1.0b1804ff6d82571178beeff4dc3f51ef.jpeg" alt={'fox3'} className="img-fluid" onClick={changeMainImg} />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col px-1">
-                            <img src={fox4} alt={'fox4'} className="img-fluid" onClick={changeMainImg} />
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/513jfDhW27L._SL1000_.jpg" alt={'fox4'} className="img-fluid" onClick={changeMainImg} />
                         </div>
                         <div className="col px-1">
-                            <img src={fox5} alt={'fox5'} className="img-fluid" onClick={changeMainImg} />
+                            <img src="https://artwhale.ph/wp-content/uploads/2015/08/Escoda-Reserva-Travel-Brush-Set.jpg" alt={'fox5'} className="img-fluid" onClick={changeMainImg} />
                         </div>
                         <div className="col px-1">
-                            <img src={fox6} alt={'fox6'} className="img-fluid" onClick={changeMainImg} />
+                            <img src="https://images0.greatart.co.uk/out/pictures/generated/1500_1500/pboxx-pixelboxx-2444430/Escoda+Grafilo+Kolinsky+Red+Sable+Round+Brushes+Series+1230%2C+20%2C+14.10.jpg" alt={'fox6'} className="img-fluid" onClick={changeMainImg} />
                         </div>
                     </div>
+                    {/* IMAGES */}
+
+
+                    {/* LIGHTBOX */}
+                    <div class="gallery-lightboxes">
+
+                        <div class="image-lightbox" id="lightbox-image-1">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-6" class="arrow-left"></a>
+                                <a href="#lightbox-image-2" class="arrow-right"></a>
+                                <img src="https://i.pinimg.com/originals/5a/f0/0b/5af00b162c74fc07ffc96615cb9f728f.jpg" alt="" />
+                                <div class="image-title">Set of 6, Short Handle</div>
+                            </div>
+                        </div>
+
+                        <div class="image-lightbox" id="lightbox-image-2">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-1" class="arrow-left"></a>
+                                <a href="#lightbox-image-3" class="arrow-right"></a>
+                                <img src="https://media.jacksonsart.com/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/B/R/BRS121410.JPG" alt="" />
+                                <div class="image-title">Pointed Round, Short Handle, Size 10</div>
+                            </div>
+                        </div>
+
+                        <div class="image-lightbox" id="lightbox-image-3">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-2" class="arrow-left"></a>
+                                <a href="#lightbox-image-4" class="arrow-right"></a>
+                                <img src="https://i5.walmartimages.com/asr/28618caf-a053-4b28-93d5-b776c0e6f498_1.0b1804ff6d82571178beeff4dc3f51ef.jpeg" alt="" />
+                                <div class="image-title">Pocket Round, Short Handle, Size 12</div>
+                            </div>
+                        </div>
+
+                        <div class="image-lightbox" id="lightbox-image-4">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-3" class="arrow-left"></a>
+                                <a href="#lightbox-image-5" class="arrow-right"></a>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/513jfDhW27L._SL1000_.jpg" alt="" />
+                                <div class="image-title">Pocket Round, Short Handle, Size 4</div>
+                            </div>
+                        </div>
+
+                        <div class="image-lightbox" id="lightbox-image-5">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-4" class="arrow-left"></a>
+                                <a href="#lightbox-image-6" class="arrow-right"></a>
+                                <img src="https://artwhale.ph/wp-content/uploads/2015/08/Escoda-Reserva-Travel-Brush-Set.jpg" alt="" />
+                                <div class="image-title">Travel Brush Set</div>
+                            </div>
+                        </div>
+
+                        <div class="image-lightbox" id="lightbox-image-6">
+                            <div class="image-lightbox-wrapper">
+                                <a href="#" class="close"></a>
+                                <a href="#lightbox-image-5" class="arrow-left"></a>
+                                <a href="#lightbox-image-1" class="arrow-right"></a>
+                                <img src="https://images0.greatart.co.uk/out/pictures/generated/1500_1500/pboxx-pixelboxx-2444430/Escoda+Grafilo+Kolinsky+Red+Sable+Round+Brushes+Series+1230%2C+20%2C+14.10.jpg" alt="" />
+                                <div class="image-title">Bright, Short Handle, Size 20</div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* LIGHTBOX */}
                 </div>
-                <div className="col-8">
+
+                {/* DESCRIPTION */}
+                <div className="col-9">
                     <h4>Escoda Reserva Kolinsky-Tajmyr Sable Brushes</h4>
                     <small>Escoda is a registered trademark</small>
                     <p></p>
                     <p><img width="150px" src={stars} alt="Rating 4.5" /> <small className="text-secondary">168 reviews | Ask Question</small></p>
-                    
+
                     <p></p>
                     <p style={{ fontWeight: 'bold', fontSize: '20px' }}>68.00 EUR</p>
 
                     <p>Named after the exact location in Siberia where Escoda sources its Kolinsky-Tajmyr Sable, Reserva Series Brushes are crafted using only the tail hairs from the male Kolinsky — renowned for their springiness and capacity to retain liquids. Selection of fine materials, as well as Escoda's unique "curing" process, results in a watercolor brush that many artists consider to be perhaps the finest in the world. Following a 75-year tradition, these exceptional brushes are crafted by hand to offer the finest points and sharpest edges available. Each is produced with a perfectly balanced, lacquered wood handle and a nickel-plated ferrule.</p>
                     <p><b>Round, Set of 6</b> - Six-piece Series 1212 set, ideal for the watercolor painter, includes round brushes in sizes 0, 2, 4, 6, 8, 10, with a gold-plated ferrule, and the finest Kolinsky sable hair available.</p>
+                    <p><b>Pocket Round, Short Handle, Size 2</b> - Pop this clever little Escoda travel brush into a pocket or plein air box. It's ready for the road at a moment's notice! Hidden within its golden chamber resides a regular length, pure Escoda Kolinsky-Tajmyr Kolinsky Sable Pointed Round brush.</p>
+                    <p><b>Pocket Round, Short Handle, Size 4</b> - Pop this clever little Escoda travel brush into a pocket or plein air box. It's ready for the road at a moment's notice! Hidden within its golden chamber resides a regular length, pure Escoda Kolinsky-Tajmyr Kolinsky Sable Pointed Round brush.</p>
                     <button className="btn btn-danger" style={{ background: 'darkred', width: '200px' }} onClick={enableAlert}>Add to cart</button>
                 </div>
-            </div>
+                {/* DESCRIPTION */}
 
+            </div>
         </div>
     )
 }
