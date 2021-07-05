@@ -9,7 +9,20 @@ import Paints2 from '../Assets/Img/Paints2.jpg';
 import Easel from '../Assets/Img/Easel.jpg';
 
 function Cart() {
-    const [total, setTotal] = useState('0.00');
+    const [product1, setProduct1] = useState(9.99);
+    const [product2, setProduct2] = useState(12.75);
+    const [product3, setProduct3] = useState(20.01);
+    const [total] = useState(product1 + product2 + product3);
+
+
+    const deleteProduct = () => {
+        // setProduct('');
+    }
+
+    const inputValue = (e) => {
+        const howManyProducts = e.target.value;
+        setProduct1(product1 * howManyProducts);
+    }
 
     return (
         <div className="container">
@@ -48,27 +61,28 @@ function Cart() {
 
                     <tbody>
                         <tr>
-                            <td> <div className="row">
-                                <div className="col-md-3">
-                                    <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px" }}>
-                                        <img src={Brushes2} className="card-img-top" alt="Pattern one" />
+                            <td>
+                                <div className="row">
+                                    <div className="col-md-3">
+                                        <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px" }}>
+                                            <img src={Brushes2} className="card-img-top" alt="Pattern one" />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <div className="card-body">
+                                            <h5 className="card-title">
+                                                <NavLink style={{ textDecoration: 'none' }} to="/category1">Brushes Set</NavLink>
+                                            </h5>
+                                            <p className="card-text">A little bit of Lorem.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            <NavLink style={{ textDecoration: 'none' }} to="/category1">Brushes Set</NavLink>
-                                        </h5>
-                                        <p className="card-text">A little bit of Lorem.</p>
-                                    </div>
-                                </div>
-                            </div>
                             </td>
                             <td style={{ paddingTop: "40px", paddingLeft: "2%" }}>
-                                <NumericInput value="1" min="1" />
+                                <NumericInput value="1" min="1" onChange={inputValue}/>
                             </td>
-                            <td style={{ paddingTop: "40px", textAlign: "center" }}>9.99 EUR</td>
-                            <td><button type="button" style={{ padding: "38%" }} class="btn ">&#128465;</button></td>
+                            <td style={{ paddingTop: "40px", textAlign: "center" }}>{product1} EUR</td>
+                            <td><button type="button" style={{ padding: "38%" }} class="btn" onClick={deleteProduct}>&#128465;</button></td>
                         </tr>
                         <tr>
                             <td>
@@ -90,7 +104,7 @@ function Cart() {
                             <td style={{ paddingTop: "40px", paddingLeft: "2%" }}>
                                 <NumericInput value="1" min="1" />
                             </td>
-                            <td style={{ paddingTop: "40px", textAlign: "center" }}>12.75 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center" }}>{product2} EUR</td>
                             <td><button type="button" style={{ padding: "38%" }} class="btn ">&#128465;</button></td>
                         </tr>
                         <tr>
@@ -113,7 +127,7 @@ function Cart() {
                             <td style={{ paddingTop: "40px", paddingLeft: "2%" }} >
                                 <NumericInput value="1" min="1" />
                             </td>
-                            <td style={{ paddingTop: "40px", textAlign: "center" }}>20 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center" }} >{product3} EUR</td>
                             <td><button type="button" style={{ padding: "38%" }} class="btn ">&#128465;</button></td>
 
 
@@ -125,13 +139,9 @@ function Cart() {
                     <div className="col-sm-8">
                     </div>
                     <div className="col-md-2">
-                        <h2>Total: {total} EUR</h2>
+                        <h2>Total: {total} €</h2>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
 
