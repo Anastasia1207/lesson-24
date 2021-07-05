@@ -75,7 +75,7 @@ function Product1() {
                         <Breadcrumb.Item><NavLink exact to="/">Home</NavLink></Breadcrumb.Item>
                         <Breadcrumb.Item><NavLink to="/categories3">Categories</NavLink></Breadcrumb.Item>
                         <Breadcrumb.Item><NavLink to="/category1">Brushes and Painting Tools</NavLink></Breadcrumb.Item>
-                        <Breadcrumb.Item active>Product 1</Breadcrumb.Item>
+                        <Breadcrumb.Item active>Tajmyr Sable Brushes</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
             </div>
