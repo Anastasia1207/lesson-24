@@ -63,7 +63,7 @@ function Cart() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>9.99 EUR</td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
                         </tr>
@@ -84,7 +84,7 @@ function Cart() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>12.75 EUR</td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
@@ -106,7 +106,7 @@ function Cart() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>20 EUR</td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
 

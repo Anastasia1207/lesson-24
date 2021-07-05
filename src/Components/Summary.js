@@ -33,7 +33,7 @@ function Summary() {
                 </ul>
 
                 <div className="row"> 
-                <div className="col my-2" style={{ paddingTop: "40px"}}>
+                <div className="col my-2" style={{ paddingTop: "60px"}}>
 <h4>Shipping Adress</h4>
 <p style={{margin: "0"}}>John Doe</p>
 <p style={{margin: "0"}}>Brivibas street 23</p>
@@ -65,7 +65,7 @@ function Summary() {
                         <tr>
                             <td> <div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div style={{ width: '100%', marginLeft: "10px", paddingTop: "14px" }}>
                                         <img src={Brushes2} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -79,14 +79,14 @@ function Summary() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>9.99 EUR</td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div style={{ width: '100%', marginLeft: "10px", paddingTop: "13px" }}>
                                         <img src={Paints2} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -95,20 +95,20 @@ function Summary() {
                                         <h5 className="card-title">
                                             <NavLink style={{ textDecoration: 'none' }} to="/category1">Paints Set</NavLink>
                                         </h5>
-                                        <p className="card-text">Some quick example text content.</p>
+                                        <p className="card-text">Some text content.</p>
                                     </div>
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>12.75 EUR</td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div  style={{ width: '100%', marginLeft: "10px", paddingTop: "14px" }}>
                                         <img src={Easel} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -122,9 +122,9 @@ function Summary() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "20px"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>20 EUR</td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td></td>
 
 
                         </tr>
