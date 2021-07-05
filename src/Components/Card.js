@@ -55,7 +55,7 @@ function Card() {
                 </div>
                 
                 </div></td>
-      <td><input type="number" value="1" min="0" max="100" stap="5"/></td>
+      <td><input type="number" value="2" min="0" max="100" stap="5"/></td>
       <td>9.99 EUR</td>
       <td><button type="button" class="btn ">&#128465;&nbsp;</button></td>
     </tr>
