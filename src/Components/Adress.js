@@ -1,10 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
+import Table from 'react-bootstrap/Table';
+
 function Adress() {
 
     return (
-        <div className="container">
+        <div className="container" >
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb >
@@ -26,11 +28,49 @@ function Adress() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/summary">Summary</NavLink>
                     </li>
-                    {/* <li class="nav-item">
-    <NavLink className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</NavLink>
-  </li> */}
+
                 </ul>
 
+                <Table striped bordered hover size="lg">
+     
+                    <tbody>
+                        <tr>
+                        <div className="row">
+                        <div className="col-md-4">
+
+                                <div class="form-outline mb-5">
+                            <label  style={{paddingLeft: "130px"}} class="form-label" for="form6Example7">Shipping Adress</label>
+            <textarea style={{ marginLeft: "130px", height: "300px" }} class="form-control" id="form6Example7" rows="4"></textarea>
+            
+
+            
+            </div>
+          </div>
+          
+
+
+          <div className="col-md-4">
+                                <div class="form-outline mb-5">
+                            <label  style={{paddingLeft: "300px"}} class="form-label" for="form6Example7">Billing Adress</label>
+            <textarea style={{  marginLeft: "300px", height: "300px"}} class="form-control" id="form6Example7" rows="4"></textarea>
+    
+            
+            </div>
+          </div>
+          </div>
+         
+
+                            
+                        </tr>
+                    </tbody>
+                </Table>
+                <div className="row">
+                <div className="col-md-10">
+                </div>
+          <div className="col-md-2">
+              <h2>Total:</h2>
+          </div>
+          </div>
 
             </div>
         </div>

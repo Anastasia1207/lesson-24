@@ -30,14 +30,12 @@ function Cart() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/summary">Summary</NavLink>
                     </li>
-                    {/* <li class="nav-item">
-    <NavLink className="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</NavLink>
-  </li> */}
+ 
                 </ul>
-                <Table striped bordered hover size="sm">
+                <Table striped bordered hover size="sm" >
                     <thead>
                         <tr>
-                            {/* <th>#</th> */}
+                        
                             <th><h4 style={{ textAlign: "center"}}>Products</h4></th>
                          
                             <th><h4 style={{ textAlign: "center"}}>Qty</h4></th>
