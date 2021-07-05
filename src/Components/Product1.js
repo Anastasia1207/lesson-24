@@ -3,7 +3,6 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { NavLink } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert'
 import './Style/Lightbox.css';
-
 import stars from '../Assets/Img/stars.png';
 
 function Product1() {

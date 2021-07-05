@@ -8,7 +8,8 @@ import Easel from '../Assets/Img/Easel.jpg';
 function Cart() {
 
     return (
-        <div className="container">
+        <div className="container" >
+             {/* BREADCRUMB */}
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb >
@@ -18,6 +19,7 @@ function Cart() {
                     </Breadcrumb>
                 </div>
             </div>
+            {/* NAVTABS */}
             <div className="row">
                 <h4>Cart</h4>
                 <ul className="nav nav-tabs">
@@ -32,6 +34,7 @@ function Cart() {
                     </li>
  
                 </ul>
+             {/* TABLE */}
                 <Table  bordered hover size="sm" >
                     <thead>
                         <tr>
@@ -41,7 +44,8 @@ function Cart() {
                             <th><h4 style={{ textAlign: "center"}}>Qty</h4></th>
 
                             <th><h4 style={{ textAlign: "center"}}>Price</h4></th>
-                            <th><h4 style={{ textAlign: "center", padding: "0px 20px"}}>Total</h4></th>
+                            <th><h4 style={{ textAlign: "center"}}>Total</h4></th>
+                            <th><h4 style={{ textAlign: "center", padding: "0px 20px"}}></h4></th>
                           
                         </tr>
                     </thead>
@@ -65,6 +69,7 @@ function Cart() {
                             </div></td>
                             <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>9.99 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
                         </tr>
                         <tr>
@@ -87,6 +92,7 @@ function Cart() {
                             <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>12.75 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
                         </tr>
                         <tr>
@@ -108,6 +114,7 @@ function Cart() {
                             </div></td>
                             <td style={{ paddingTop: "40px", paddingLeft: "2%"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>20 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
 
 

@@ -11,6 +11,7 @@ function Categories3() {
     return (
 
         <div className="container">
+        {/* BREADCRUMB */}
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb>
@@ -18,6 +19,7 @@ function Categories3() {
                         <Breadcrumb.Item active>Categories</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
+                {/* CATEGORIES */}
                     <div className="row">
                         <div className="col">
                             <h4>Categories</h4>

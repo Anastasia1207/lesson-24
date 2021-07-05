@@ -8,18 +8,21 @@ import Easel from '../Assets/Img/Easel.jpg';
 function Summary() {
 
     return (
-        <div className="container">
+        <div className="container" style={{ paddingBottom: "60px" }}>
+             {/* BREADCRUMB */}
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb >
                         <Breadcrumb.Item><NavLink exact to="/">Home</NavLink></Breadcrumb.Item>
                         <Breadcrumb.Item><NavLink to="/cart">Cart</NavLink></Breadcrumb.Item>
-                        <Breadcrumb.Item active>Products</Breadcrumb.Item>
+                        <Breadcrumb.Item active>Summary</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
             </div>
+           
+              {/* NAVTAB */}
             <div className="row">
-                <h4>Summary</h4>
+                <h4>Cart</h4>
                 <ul className="nav nav-tabs">
                     <li className="nav-item">
                         <NavLink className="nav-link" aria-current="page" to="/cart">Products</NavLink>
@@ -31,7 +34,8 @@ function Summary() {
                         <NavLink className="nav-link active" to="/summary">Summary</NavLink>
                     </li>
                 </ul>
-
+               
+                 {/* SUMMARY TAB */}
                 <div className="row"> 
                 <div className="col my-2" style={{ paddingTop: "60px"}}>
 <h4>Shipping Adress</h4>
@@ -57,6 +61,7 @@ function Summary() {
                             <th><h4 style={{ textAlign: "center"}}>Qty</h4></th>
 
                             <th><h4 style={{ textAlign: "center"}}>Price</h4></th>
+                            <th><h4 style={{ textAlign: "center"}}>Total</h4></th>
                             <th><h4 style={{ textAlign: "center", padding: "0px 20px"}}>Total</h4></th>
                           
                      

@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-
 import Brushes1 from '../Assets/Img/Brushes1.jpg';
 
 function Category1() {
 
     return (
         <div className="container">
+             {/* BREADCRUMB */}
             <div className="row">
                 <div className="col my-4">
                     <Breadcrumb >
@@ -16,7 +16,7 @@ function Category1() {
                     </Breadcrumb>
                 </div>
             </div>
-
+             {/* CATEGORY */}
             <div className="row">
                 <div className="col">
                     <h4>Brushes and Painting Tools</h4>
