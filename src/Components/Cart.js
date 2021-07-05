@@ -15,12 +15,13 @@ function Cart() {
     const [total1, setTotal1] = useState(9.99);
     const [total2, setTotal2] = useState(12.75);
     const [total3, setTotal3] = useState(20.01);
-    const [total] = useState(product1 + product2 + product3);
+    const [total] = useState(total1 + total2 + total3);
 
 
     const inputValue = (event) => {
+        console.log('test')
         const inputValue = event.target.value;
-        setProduct1(product1 * inputValue);
+        setTotal1(total1 * inputValue);
     }
 
     const removeProduct = (event) => {
@@ -93,7 +94,7 @@ function Cart() {
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1} EUR</td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{total1} EUR</td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn" onClick={removeProduct}>&#128465;</button></td>
+                            <td><button type="button" style={{ padding: "38%"}} class="btn" onChange={removeProduct}>&#128465;</button></td>
                         </tr>
                         <tr className="productCart">
                             <td><div className="row">
