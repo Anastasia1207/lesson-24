@@ -8,6 +8,7 @@ import Paints2 from '../Assets/Img/Paints2.jpg';
 import Easel from '../Assets/Img/Easel.jpg';
 
 function Cart() {
+    const [productCount, setProducrCount] = useState(1);
     const [product1] = useState(9.99);
     const [product2] = useState(12.75);
     const [product3] = useState(20.01);
@@ -16,11 +17,22 @@ function Cart() {
     const [total3, setTotal3] = useState(20.01);
     const [total, setTotal] = useState(42.75);
 
+    const pluss = () => {
+        setProducrCount(productCount + 1)
+        setTotal1(total1 * (productCount + 1))
+        setTotal(total + total1)
+    }
 
-    const inputValue = (event) => {
-        console.log('test')
-        const inputValue = event.target.value;
-        setTotal1(total1 * inputValue);
+    const minus = () => {
+        setProducrCount(productCount - 1)
+        setTotal1(total1 - (total1 * (productCount)))
+        setTotal(total - total1)
+    }
+
+    const inputValue = (e) => {
+        console.log(e.target.value);
+        setTotal2(total2 * e.target.value)
+
     }
     
 
@@ -94,7 +106,10 @@ function Cart() {
                             </div>
                             </td>
                             <td style={{ paddingTop: "40px", paddingLeft: "2%"}}>
-                                <NumericInput value={1} min={1} onClick={inputValue}/>
+                                <button onClick={minus}>-</button>
+                                <input  value={productCount} onChange={inputValue}/>
+                                <button onClick={pluss}>+</button>
+                                {/* <NumericInput value={1} min={1} onClick={inputValue} /> */}
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1} EUR</td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}} onChange={updateTotal}>{total1} EUR</td>
