@@ -3,7 +3,6 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Table from 'react-bootstrap/Table';
 import { useState } from 'react';
 import NumericInput from 'react-numeric-input';
-
 import Brushes2 from '../Assets/Img/Brushes2.jpg';
 import Paints2 from '../Assets/Img/Paints2.jpg';
 import Easel from '../Assets/Img/Easel.jpg';
@@ -22,6 +21,7 @@ function Cart() {
         const inputValue = event.target.value;
         setProduct1(product1 * inputValue);
     }
+    
 
     const removeProduct = (event) => {
         event.target.closest('.productCart').remove();

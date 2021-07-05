@@ -4,9 +4,25 @@ import Table from 'react-bootstrap/Table';
 import Brushes2 from '../Assets/Img/Brushes2.jpg';
 import Paints2 from '../Assets/Img/Paints2.jpg';
 import Easel from '../Assets/Img/Easel.jpg';
+import { useState } from 'react';
+import NumericInput from 'react-numeric-input';
 
 function Summary() {
 
+        const [product1, setProduct1] = useState(9.99);
+        const [product2, setProduct2] = useState(12.75);
+        const [product3, setProduct3] = useState(20.01);
+        const [total1, setTotal1] = useState(9.99);
+        const [total2, setTotal2] = useState(12.75);
+        const [total3, setTotal3] = useState(20.01);
+        const [total] = useState(product1 + product2 + product3);
+    
+    
+        const inputValue = (event) => {
+            const inputValue = event.target.value;
+            setProduct1(product1 * inputValue);
+        }
+    
     return (
         <div className="container" style={{ paddingBottom: "60px" }}>
              {/* BREADCRUMB */}
@@ -62,12 +78,12 @@ function Summary() {
 
                             <th><h4 style={{ textAlign: "center"}}>Price</h4></th>
                             <th><h4 style={{ textAlign: "center"}}>Total</h4></th>
-                            <th><h4 style={{ textAlign: "center", padding: "0px 20px"}}>Total</h4></th>
+                        
                           
                      
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr className="productCart">
                             <td> <div className="row">
                                 <div className="col-md-3">
                                     <div style={{ width: '100%', marginLeft: "10px", paddingTop: "14px" }}>
@@ -83,12 +99,16 @@ function Summary() {
                                     </div>
                                 </div>
 
-                            </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}>9.99 EUR</td>
+                            </div>
+                            </td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}>
+                            <NumericInput value={1} min={1} onClick={inputValue}/>
+                            </td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1}  EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total1} EUR</td>
                             <td></td>
                         </tr>
-                        <tr>
+                        <tr className="productCart">
                             <td><div className="row">
                                 <div className="col-md-3">
                                     <div style={{ width: '100%', marginLeft: "10px", paddingTop: "13px" }}>
@@ -105,12 +125,15 @@ function Summary() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}><input type="number" value="1" min="0" max="100" stap="5" /></td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}}> 
+                            <NumericInput value={1} min={1} onClick={inputValue}/>  
+                            </td>
                             
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}>12.75 EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{product2} EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total2} EUR</td>
                             <td></td>
                         </tr>
-                        <tr>
+                        <tr className="productCart">
                             <td><div className="row">
                                 <div className="col-md-3">
                                     <div  style={{ width: '100%', marginLeft: "10px", paddingTop: "14px" }}>
@@ -127,8 +150,11 @@ function Summary() {
                                 </div>
 
                             </div></td>
-                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}} ><input type="number" value="1" min="0" max="100" stap="5" /></td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}>20 EUR</td>
+                            <td style={{ paddingTop: "40px", paddingLeft: "2%"}} >
+                            <NumericInput value={1} min={1} onClick={inputValue}/>
+                            </td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{product3} EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total3} EUR</td>
                             <td></td>
 
 
@@ -139,7 +165,7 @@ function Summary() {
                 <div className="col-sm-8">
                 </div>
           <div className="col-md-2">
-              <h2>Total:</h2>
+              <h2>Total:{total}</h2>
           </div>
           </div>
                     </div>
