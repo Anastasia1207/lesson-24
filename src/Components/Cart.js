@@ -12,6 +12,9 @@ function Cart() {
     const [product1, setProduct1] = useState(9.99);
     const [product2, setProduct2] = useState(12.75);
     const [product3, setProduct3] = useState(20.01);
+    const [total1, setTotal1] = useState(9.99);
+    const [total2, setTotal2] = useState(12.75);
+    const [total3, setTotal3] = useState(20.01);
     const [total] = useState(product1 + product2 + product3);
 
 
@@ -19,6 +22,10 @@ function Cart() {
         const inputValue = event.target.value;
         setProduct1(product1 * inputValue);
     }
+
+    const removeProduct = (event) => {
+        event.target.closest('.productCart').remove();
+      };
 
     return (
         <div className="container" >
@@ -63,7 +70,7 @@ function Cart() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr className="productCart">
                             <td> <div className="row">
                                 <div className="col-md-3">
                                     <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px"}}>
@@ -85,10 +92,10 @@ function Cart() {
                                 <NumericInput value={1} min={1} onClick={inputValue}/>
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1} EUR</td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total1} EUR</td>
+                            <td><button type="button" style={{ padding: "38%"}} class="btn" onClick={removeProduct}>&#128465;</button></td>
                         </tr>
-                        <tr>
+                        <tr className="productCart">
                             <td><div className="row">
                                 <div className="col-md-3">
                                     <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px",}}>
@@ -110,10 +117,10 @@ function Cart() {
                             </td>
                             
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product2} EUR</td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total2} EUR</td>
+                            <td><button type="button" style={{ padding: "38%"}} class="btn " onClick={removeProduct}>&#128465;</button></td>
                         </tr>
-                        <tr>
+                        <tr className="productCart">
                             <td><div className="row">
                                 <div className="col-md-3">
                                     <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px",}}>
@@ -134,8 +141,8 @@ function Cart() {
                                 <NumericInput value={1} min={1} onClick={inputValue}/>
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product3} EUR</td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}></td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn ">&#128465;</button></td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total3} EUR</td>
+                            <td><button type="button" style={{ padding: "38%"}} class="btn " onClick={removeProduct}>&#128465;</button></td>
 
 
                         </tr>
