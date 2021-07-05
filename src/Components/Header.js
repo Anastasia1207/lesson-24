@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
 
     return (
-        <div>
+        <div className="row">
             <nav className="navbar navbar-expand-lg  navbar navbar-dark bg-dark border-right">
                 <div className="container-fluid">
                     <NavLink className="navbar-brand " to="/">ART Origin</NavLink>

@@ -18,7 +18,7 @@ function Adress() {
                 <h4>Adress</h4>
                 <ul className="nav nav-tabs">
                     <li className="nav-item">
-                        <NavLink className="nav-link" aria-current="page" to="/card">Products</NavLink>
+                        <NavLink className="nav-link" aria-current="page" to="/cart">Products</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link active" to="/adress">Adress</NavLink>

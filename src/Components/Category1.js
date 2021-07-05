@@ -27,9 +27,8 @@ function Category1() {
                     <img src={Brushes1} alt={'main foto'} className="img-fluid" />
                 </div>
                 <div className="col-8 mt-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta, hic voluptatibus eligendi dignissimos corrupti nisi doloribus, eius exercitationem ut minus vitae ad fugiat tenetur numquam omnis aliquid? Illo, minima.</p>
-                    <p>Cupiditate, vel. In eius, corporis non, ex repellat quaerat doloribus provident consequatur reprehenderit deleniti officiis placeat molestiae obcaecati quo temporibus dolores dolor!</p>
-                    <p>Veritatis, possimus maxime autem provident voluptatem quo nam sapiente aliquam quos quam corrupti nemo, ratione distinctio odio expedita dolor voluptatum iusto omnis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur consequatur qui in laborum. Ipsam nemo, labore debitis eos ipsum voluptates quos quod optio suscipit quibusdam maxime, illo nobis fuga eveniet!</p>
+                    <p>ART Origin offers one of the largest selections of artist paint brushes available, for every type of media and every kind of artmaking. Our extensive range of brush fibers (both natural paint brushes and synthetic paint brushes), brush shapes, and sizes gives artists the best choice for their style of artmaking. From high-quality oil brushes, acrylic brushes, and watercolor brushes, to craft and foam brushes for home décor or decorative use, to makeup brushes for theater, cosplay, or personal use, ART Origin offers the widest selection and the best prices.</p>
+                    <p>Because ART Origin sources thousands of artist brushes from around the world, no other art supply company maintains such a huge inventory and selection. Every brush we carry is stored in our climate-controlled facility for protection from dust, humidity, and temperature fluctuations. The same care is taken with our art painting tools. Whether you're purchasing a high-quality artist paint brush such as a handmade Siberian Kolinsky watercolor brush costing hundreds of dollars, a canister of affordable nylon paint brushes for a kindergarten class, or an eco-friendly brush cleaner, you get the same great service from ART Origin.</p>
                 </div>
             </div>
             <div className="row">
