@@ -94,7 +94,7 @@ function Cart() {
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1} EUR</td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{total1} EUR</td>
-                            <td><button type="button" style={{ padding: "38%"}} class="btn" onChange={removeProduct}>&#128465;</button></td>
+                            <td><button type="button" style={{ padding: "38%"}} class="btn" onClick={removeProduct}>&#128465;</button></td>
                         </tr>
                         <tr className="productCart">
                             <td><div className="row">
