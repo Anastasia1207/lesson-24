@@ -1,7 +1,7 @@
 function Footer() {
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
 
            
