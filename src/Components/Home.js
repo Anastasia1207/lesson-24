@@ -29,8 +29,6 @@ function Home() {
                                 src={pattern1}
                                 alt="Pattern one"
                             />
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -38,8 +36,6 @@ function Home() {
                                 src={pattern2}
                                 alt="Pattern two"
                             />
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -47,8 +43,6 @@ function Home() {
                                 src={pattern3}
                                 alt="Pattern three"
                             />
-                            <Carousel.Caption>
-                            </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
