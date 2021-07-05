@@ -8,24 +8,29 @@ import Paints2 from '../Assets/Img/Paints2.jpg';
 import Easel from '../Assets/Img/Easel.jpg';
 
 function Cart() {
-    const [product1, setProduct1] = useState(9.99);
-    const [product2, setProduct2] = useState(12.75);
-    const [product3, setProduct3] = useState(20.01);
+    const [product1] = useState(9.99);
+    const [product2] = useState(12.75);
+    const [product3] = useState(20.01);
     const [total1, setTotal1] = useState(9.99);
     const [total2, setTotal2] = useState(12.75);
     const [total3, setTotal3] = useState(20.01);
-    const [total] = useState(product1 + product2 + product3);
+    const [total, setTotal] = useState(42.75);
 
 
     const inputValue = (event) => {
+        console.log('test')
         const inputValue = event.target.value;
-        setProduct1(product1 * inputValue);
+        setTotal1(total1 * inputValue);
     }
     
 
     const removeProduct = (event) => {
         event.target.closest('.productCart').remove();
       };
+
+    const updateTotal = () => {
+        setTotal(total1 + total2 + total3);
+    }
 
     return (
         <div className="container" >
@@ -92,7 +97,7 @@ function Cart() {
                                 <NumericInput value={1} min={1} onClick={inputValue}/>
                             </td>
                             <td style={{ paddingTop: "40px", textAlign: "center"}}>{product1} EUR</td>
-                            <td style={{ paddingTop: "40px", textAlign: "center"}}>{total1} EUR</td>
+                            <td style={{ paddingTop: "40px", textAlign: "center"}} onChange={updateTotal}>{total1} EUR</td>
                             <td><button type="button" style={{ padding: "38%"}} class="btn" onClick={removeProduct}>&#128465;</button></td>
                         </tr>
                         <tr className="productCart">
@@ -153,7 +158,7 @@ function Cart() {
                 <div className="col-sm-8">
                 </div>
           <div className="col-md-2">
-              <h2>Total: {total} EUR</h2>
+              <h2>Total: {total} €</h2>
           </div>
           </div>
 

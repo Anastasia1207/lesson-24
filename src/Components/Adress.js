@@ -77,7 +77,7 @@ function Adress() {
                 <div className="col-sm-8">
                 </div>
           <div className="col-md-2">
-              <h2 >Total:</h2>
+              <h2 >Total: {} EUR</h2>
           </div>
           </div>
 
