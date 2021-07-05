@@ -32,7 +32,7 @@ function Cart() {
                     </li>
  
                 </ul>
-                <Table striped bordered hover size="sm" >
+                <Table  bordered hover size="sm" >
                     <thead>
                         <tr>
                         
