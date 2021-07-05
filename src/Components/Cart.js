@@ -49,7 +49,7 @@ function Cart() {
                         <tr>
                             <td> <div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px"}}>
                                         <img src={Brushes2} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ function Cart() {
                         <tr>
                             <td><div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px",}}>
                                         <img src={Paints2} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ function Cart() {
                         <tr>
                             <td><div className="row">
                                 <div className="col-md-3">
-                                    <div className="card" style={{ width: '50%' }}>
+                                    <div style={{ width: '100%', paddingTop: "10px", paddingBottom: "10px", paddingLeft: "10px",}}>
                                         <img src={Easel} className="card-img-top" alt="Pattern one" />
                                     </div>
                                 </div>
@@ -115,7 +115,13 @@ function Cart() {
                     </tbody>
                 </Table>
 
-
+                <div className="row">
+                <div className="col-sm-8">
+                </div>
+          <div className="col-md-2">
+              <h2>Total:</h2>
+          </div>
+          </div>
 
 
 

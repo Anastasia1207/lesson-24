@@ -30,8 +30,8 @@ function Adress() {
                     </li>
 
                 </ul>
-
-                <Table striped bordered hover size="lg">
+                <div className="col my-4">
+                <Table className="table-default  table-table-sm"  hover size="sm">
      
                     <tbody>
                         <tr>
@@ -65,7 +65,7 @@ function Adress() {
                     </tbody>
                 </Table>
                 <div className="row">
-                <div className="col-md-10">
+                <div className="col-sm-8">
                 </div>
           <div className="col-md-2">
               <h2>Total:</h2>
@@ -74,6 +74,7 @@ function Adress() {
 
             </div>
         </div>
+         </div>
 
     )
 }
